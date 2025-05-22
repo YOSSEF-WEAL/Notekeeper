@@ -9,48 +9,47 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
 :root {
   /* colors */
   --black: #000000;
 
   /* Light theme */
-  --background-light: #f8fafc; /* slate-50 */
-  --on-background-light: #0f172a; /* slate-900 */
-  --surface-light: #f1f5f9; /* slate-100 */
-  --surface-container-low-light: #e2e8f0; /* slate-200 */
-  --surface-container-highest-light: #cbd5e1; /* slate-300 */
-  --on-surface-light: #0f172a; /* slate-900 */
-  --on-surface-variant-light: #334155; /* slate-700 */
-  --primary-light: #3b82f6; /* blue-500 */
+  --background-light: #fffbff;
+  --on-background-light: #201a18;
+  --surface-light: #fff8f6;
+  --surface-container-low-light: #fef1ec;
+  --surface-container-highest-light: #ede0db;
+  --on-surface-light: #201a18;
+  --on-surface-variant-light: #52443d;
+  --primary-light: #9d4300;
   --on-primary-light: #ffffff;
-  --primary-container-light: #bfdbfe; /* blue-200 */
-  --on-primary-container-light: #1e3a8a; /* blue-900 */
-  --secondary-container-light: #e0f2fe; /* sky-100 */
-  --on-secondary-container-light: #0c4a6e; /* sky-900 */
-  --outline-light: #94a3b8; /* slate-400 */
-  --outline-variant-light: #cbd5e1; /* slate-300 */
-  --inverse-surface-light: #1e293b; /* slate-800 */
-  --inverse-on-surface-light: #f1f5f9; /* slate-100 */
+  --primary-container-light: #ffdbca;
+  --on-primary-container-light: #341100;
+  --secondary-container-light: #ffdbca;
+  --on-secondary-container-light: #2b160a;
+  --outline-light: #85736b;
+  --outline-variant-light: #d7c2b9;
+  --inverse-surface-light: #362f2c;
+  --inverse-on-surface-light: #fbeee9;
 
   /* Dark theme */
-  --background-dark: #0f172a; /* slate-900 */
-  --on-background-dark: #f1f5f9; /* slate-100 */
-  --surface-dark: #1e293b; /* slate-800 */
-  --surface-container-low-dark: #1e293b; /* slate-800 */
-  --surface-container-highest-dark: #334155; /* slate-700 */
-  --on-surface-dark: #e2e8f0; /* slate-200 */
-  --on-surface-variant-dark: #cbd5e1; /* slate-300 */
-  --primary-dark: #60a5fa; /* blue-400 */
-  --on-primary-dark: #1e3a8a; /* blue-900 */
-  --primary-container-dark: #1d4ed8; /* blue-700 */
-  --on-primary-container-dark: #dbeafe; /* blue-100 */
-  --secondary-container-dark: #0c4a6e; /* sky-900 */
-  --on-secondary-container-dark: #e0f2fe; /* sky-100 */
-  --outline-dark: #94a3b8; /* slate-400 */
-  --outline-variant-dark: #475569; /* slate-600 */
-  --inverse-surface-dark: #f1f5f9; /* slate-100 */
-  --inverse-on-surface-dark: #0f172a; /* slate-900 */
+  --background-dark: #201a18;
+  --on-background-dark: #ede0db;
+  --surface-dark: #181210;
+  --surface-container-low-dark: #201a18;
+  --surface-container-highest-dark: #3a3330;
+  --on-surface-dark: #d0c4bf;
+  --on-surface-variant-dark: #d7c2b9;
+  --primary-dark: #ffb690;
+  --on-primary-dark: #552100;
+  --primary-container-dark: #783200;
+  --on-primary-container-dark: #ffdbca;
+  --secondary-container-dark: #5c4032;
+  --on-secondary-container-dark: #ffdbca;
+  --outline-dark: #a08d84;
+  --outline-variant-dark: #52443d;
+  --inverse-surface-dark: #ede0db;
+  --inverse-on-surface-dark: #201a18;
 
   /* Typography */
   --font-primary: "Kumbh Sans", sans-serif;
