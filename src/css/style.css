@@ -944,3 +944,9 @@ body {
     visibility: visible !important;
   }
 }
+
+@media (max-width: 500px) {
+  .card {
+    width: 95%;
+  }
+}

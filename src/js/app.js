@@ -60,16 +60,42 @@ const showNoteBookField = function () {
   // Make notebook field content editable and focus
   makeElemEditable(navitemField);
 
+  let created = false;
+
+  // Helper to remove both listeners after creation
+  function removeListeners() {
+    navitemField.removeEventListener("keydown", createNotebookHandler);
+    navitemField.removeEventListener("blur", blurHandler);
+  }
+
   // When user presses 'Enter' then create notebook
-  navitem.addEventListener("keydown", createNotebook);
+  function createNotebookHandler(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      createNotebookOnce();
+    }
+  }
 
   // When user clicks outside (blur), also create notebook
-  navitemField.addEventListener("blur", function () {
-    // Prevent creating empty notebook if nothing was typed
-    if (!navitemField.textContent.trim() && !navitemField.isContentEditable)
+  function blurHandler() {
+    createNotebookOnce();
+  }
+
+  function createNotebookOnce() {
+    if (created) return;
+    created = true;
+    const name = navitemField.textContent.trim();
+    if (!name) {
+      navitem.remove();
+      removeListeners();
       return;
+    }
     createNotebook.call(navitem, { key: "Enter" });
-  });
+    removeListeners();
+  }
+
+  navitemField.addEventListener("keydown", createNotebookHandler);
+  navitemField.addEventListener("blur", blurHandler);
 };
 
 addNoteBookBtn.addEventListener("click", showNoteBookField);
